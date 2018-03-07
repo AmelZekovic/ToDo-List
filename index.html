@@ -8,16 +8,20 @@
 	<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
 </head>
 <body>
+	<div id="content">
+		<div id="container">
+			<h1>To-Do List <i class="fa fa-plus" aria-hidden="true"></i></h1>
+			<input type="text" name="" placeholder="Add New Todo">
 
-	<div id="container">
-		<h1>To-Do List <i class="fa fa-plus" aria-hidden="true"></i></h1>
-		<input type="text" name="" placeholder="Add New Todo">
-
-		<ul>
-			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Buy milk</li>
-			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Go to the gym</li>
-			<li><span><i class="fa fa-trash" aria-hidden="true"></i></span> Wash car</li>
-		</ul>
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="flex-row">
+			<button id="export" class="btn">Export</button>
+			<button id="import" class="btn">Import</button>
+	  	<input type="file" id="csvFileInput" onchange="handleImport(this.files)" accept=".csv">
+	  </div>
 	</div>
 
 <script type="text/javascript" src="assets/js/todos.js"></script>

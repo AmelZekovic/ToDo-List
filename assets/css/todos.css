@@ -69,9 +69,13 @@ input:focus {
 	outline: none;
 }
 
+#content {
+	width: 360px;
+	margin: 50px auto; ;
+}
 #container {
 	width: 360px;
-	margin: 100px auto;
+	margin: 50px auto;
 	background: #f7f7f7;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
@@ -80,3 +84,55 @@ input:focus {
 	color: gray;
 	text-decoration: line-through;
 }
+
+.btn {
+  background: #d93434;
+  background-image: -webkit-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -moz-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -ms-linear-gradient(top, #d93434, #b82b2b);
+  background-image: -o-linear-gradient(top, #d93434, #b82b2b);
+  background-image: linear-gradient(to bottom, #d93434, #b82b2b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#csvFileInput {
+		display: none;
+}
+
+@media screen {
+	.flex-row {
+		display: flex;
+		flex-direction: column;
+	}
+	#import, #export {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 660px) {
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#import, #export {
+		width: 45%;
+	}
+}
+
